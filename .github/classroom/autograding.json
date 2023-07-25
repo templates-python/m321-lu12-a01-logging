@@ -1,7 +1,7 @@
 {
   "tests": [
     {
-      "name": "Autograding",
+      "name": "Input/Output",
       "setup": "",
       "run": "python3 main.py",
       "input": "",
@@ -9,6 +9,16 @@
       "comparison": "included",
       "timeout": 1,
       "points": 1
+    },
+    {
+      "name": "Pytest",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -v  -k \"test\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
     }
   ]
 }

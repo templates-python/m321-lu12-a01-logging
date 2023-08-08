@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 jobs:
-  setup:
+  copy-issues:
     if: ${{ contains(github.actor, 'classroom') }}
     uses: BZZ-Commons/workflows/.github/workflows/setup.yml@main
     with:

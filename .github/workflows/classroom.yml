@@ -23,5 +23,5 @@ jobs:
     if: ${{ !contains(github.actor, 'classroom') }}
     uses: BZZ-Commons/workflows/.github/workflows/grading.yml@main
     with:
-      MOODLE: false  # CHANGE true=export grade to moodle
+      MOODLE: true  # CHANGE true=export grade to moodle
     secrets: inherit
